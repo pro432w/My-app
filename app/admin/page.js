@@ -1,6 +1,6 @@
 'use client'
 import { useEffect, useState } from 'react'
-import { supabase } from '@/lib/supabase'
+import { supabase } from '../../lib/supabase' // Fixed import
 import { useRouter } from 'next/navigation'
 import Link from 'next/link'
 import { Trash2, PlusCircle, LogOut } from 'lucide-react'
@@ -78,4 +78,5 @@ export default function AdminDashboard() {
       </div>
     </div>
   )
-}
+      }
+    
