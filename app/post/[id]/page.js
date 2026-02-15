@@ -1,6 +1,6 @@
 'use client'
 import { useEffect, useState } from 'react'
-import { supabase } from '@/lib/supabase'
+import { supabase } from '../../../lib/supabase' // Fixed import
 import { ArrowLeft, Clock } from 'lucide-react'
 import Link from 'next/link'
 
@@ -47,5 +47,5 @@ export default function PostPage({ params }) {
       </div>
     </div>
   )
-      }
+    }
     
