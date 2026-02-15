@@ -1,6 +1,6 @@
 'use client'
 import { useState, useEffect } from 'react'
-import { supabase } from '@/lib/supabase'
+import { supabase } from '../../../lib/supabase' // Fixed import
 import { useRouter } from 'next/navigation'
 import Link from 'next/link'
 import { ArrowLeft } from 'lucide-react'
@@ -93,4 +93,5 @@ export default function CreatePost() {
       </div>
     </div>
   )
-}
+    }
+    
